@@ -14,11 +14,11 @@
     <title>Monster Lite Template by WrapPixel</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/monster-admin-lite/" />
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url();?>assets/images/favicon.png">
     <!-- Custom CSS -->
-    <link href="assets/plugins/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/plugins/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -56,14 +56,14 @@
                         <b class="logo-icon">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <img src="<?php echo base_url();?>assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
 
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
                         <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <img src="<?php echo base_url();?>assets/images/logo-text.png" alt="homepage" class="dark-logo" />
 
                         </span>
                     </a>
@@ -106,7 +106,7 @@
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/images/users/1.jpg" alt="user" class="profile-pic me-2">Markarn Doe
+                                <img src="<?php echo base_url();?>assets/images/users/1.jpg" alt="user" class="profile-pic me-2">Markarn Doe
                             </a>
                             <ul class="dropdown-menu show" aria-labelledby="navbarDropdown"></ul>
                         </li>
@@ -200,21 +200,22 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="<?php echo base_url();?>assets/plugins/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="assets/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/app-style-switcher.js"></script>
+    <script src="<?php echo base_url();?>assets/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url();?>assets/js/app-style-switcher.js"></script>
     <!--Wave Effects -->
-    <script src="assets/js/waves.js"></script>
+    <script src="<?php echo base_url();?>assets/js/waves.js"></script>
     <!--Menu sidebar -->
-    <script src="assets/js/sidebarmenu.js"></script>
+    <script src="<?php echo base_url();?>assets/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
-    <script src="assets/js/custom.js"></script>
+    <script src="<?php echo base_url();?>assets/js/custom.js"></script>
     <!--This page JavaScript -->
     <!--flot chart-->
-    <script src="assets/plugins/flot/jquery.flot.js"></script>
-    <script src="assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-    <script src="assets/js/pages/dashboards/dashboard1.js"></script>
+    <script src="<?php echo base_url();?>assets/plugins/flot/jquery.flot.js"></script>
+    <script src="<?php echo base_url();?>assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="<?php echo base_url();?>assets/js/pages/dashboards/dashboard1.js"></script>
+     <!-- <script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.min.js"></script> -->
 </body>
 
 </html>
