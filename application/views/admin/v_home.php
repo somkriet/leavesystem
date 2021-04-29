@@ -14,13 +14,13 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-md-6 col-4 align-self-center">
+                   <!--  <div class="col-md-6 col-4 align-self-center">
                         <div class="text-end upgrade-btn">
                             <a href="https://www.wrappixel.com/templates/monsteradmin/"
                                 class="btn btn-success d-none d-md-inline-block text-white" target="_blank">Upgrade to
                                 Pro</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- ============================================================== -->
@@ -30,49 +30,49 @@
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Sales chart -->
-                <!-- ============================================================== -->
+    
                 <div class="row">
                     <!-- Column -->
-                    <div class="col-sm-6">
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
                         <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Daily Sales</h4>
-                                <div class="text-end">
-                                    <h2 class="font-light mb-0"><i class="ti-arrow-up text-success"></i> $120</h2>
-                                    <span class="text-muted">Todays Income</span>
-                                </div>
-                                <span class="text-success">80%</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar"
-                                        style="width: 80%; height: 6px;" aria-valuenow="25" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
+                            <div class="box p-2 rounded bg-info text-center">
+                                <h1 class="fw-light text-white">4</h1>
+                                <h6 class="text-white">พนักงานยืนใบลา</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card">
+                            <div class="box p-2 rounded bg-success text-center">
+                                <h1 class="fw-light text-white">5</h1>
+                                <h6 class="text-white">จำนวนการลาในเดือน <?php echo date('m'); ?></h6>
                             </div>
                         </div>
                     </div>
                     <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-sm-6">
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
                         <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Weekly Sales</h4>
-                                <div class="text-end">
-                                    <h2 class="font-light mb-0"><i class="ti-arrow-up text-info"></i> $5,000</h2>
-                                    <span class="text-muted">Todays Income</span>
-                                </div>
-                                <span class="text-info">30%</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar"
-                                        style="width: 30%; height: 6px;" aria-valuenow="25" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
+                            <div class="box p-2 rounded bg-primary text-center">
+                                <h1 class="fw-light text-white">38</h1>
+                                <h6 class="text-white">จำนวนพนักงาน</h6>
                             </div>
                         </div>
                     </div>
                     <!-- Column -->
+                    <!-- <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card">
+                            <div class="box p-2 rounded bg-warning text-center">
+                                <h1 class="fw-light text-white">10%</h1>
+                                <h6 class="text-white">Bounce Rate</h6>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
+
+
+
                 <!-- ============================================================== -->
                 <!-- Sales chart -->
                 <!-- ============================================================== -->
@@ -81,7 +81,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Revenue Statistics</h4>
+                                <h4 class="card-title">สถิติการลาปี <?php echo date('Y');?></h4>
                                 <div class="flot-chart">
                                     <div class="flot-chart-content " id="flot-line-chart"
                                         style="padding: 0px; position: relative;">
