@@ -53,6 +53,7 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['home'] = 'admin/home';
 $route['backend'] = 'backend/login_backend';
 
 $route['upload-image'] = 'imageuploadcontroller';
