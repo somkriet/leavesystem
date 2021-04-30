@@ -29,209 +29,140 @@
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
-            <div class="container-fluid">
-    
-                <div class="row">
-                    <!-- Column -->
-                    <div class="col-md-6 col-lg-3 col-xlg-3">
-                        <div class="card">
-                            <div class="box p-2 rounded bg-info text-center">
-                                <h1 class="fw-light text-white">4</h1>
-                                <h6 class="text-white">พนักงานยืนใบลา</h6>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Column -->
-                    <div class="col-md-6 col-lg-3 col-xlg-3">
-                        <div class="card">
-                            <div class="box p-2 rounded bg-success text-center">
-                                <h1 class="fw-light text-white">5</h1>
-                                <h6 class="text-white">จำนวนการลาในเดือน <?php echo date('m'); ?></h6>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <div class="col-md-6 col-lg-3 col-xlg-3">
-                        <div class="card">
-                            <div class="box p-2 rounded bg-primary text-center">
-                                <h1 class="fw-light text-white">38</h1>
-                                <h6 class="text-white">จำนวนพนักงาน</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- <div class="col-md-6 col-lg-3 col-xlg-3">
-                        <div class="card">
-                            <div class="box p-2 rounded bg-warning text-center">
-                                <h1 class="fw-light text-white">10%</h1>
-                                <h6 class="text-white">Bounce Rate</h6>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-
-
-
+<div class="container-fluid">
                 <!-- ============================================================== -->
-                <!-- Sales chart -->
+                <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <div class="row">
                     <!-- column -->
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">สถิติการลาปี <?php echo date('Y');?></h4>
-                                <div class="flot-chart">
-                                    <div class="flot-chart-content " id="flot-line-chart"
-                                        style="padding: 0px; position: relative;">
-                                        <canvas class="flot-base w-100" height="400"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- column -->
-                </div>
-                <!-- ============================================================== -->
-                <!-- Table -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-md-flex">
-                                    <h4 class="card-title col-md-10 mb-md-0 mb-3 align-self-center">Projects of the Month</h4>
-                                    <div class="col-md-2 ms-auto">
-                                        <select class="form-select shadow-none col-md-2 ml-auto">
-                                            <option selected>January</option>
-                                            <option value="1">February</option>
-                                            <option value="2">March</option>
-                                            <option value="3">April</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="table-responsive mt-5">
-                                    <table class="table stylish-table no-wrap">
+                                <h4 class="card-title">ยืนยันการลา / Leave Approve</h4>
+                                <h6 class="card-subtitle">ตารางแสดงข้อมูลการลาของ</h6>
+                                <div class="table-responsive">
+                                    <table id="myTable" class="table user-table no-wrap">
                                         <thead>
                                             <tr>
-                                                <th class="border-top-0" colspan="2">Assigned</th>
-                                                <th class="border-top-0">Name</th>
-                                                <th class="border-top-0">Budget</th>
+                                                <th class="border-top-0">#</th>
+                                                <th class="border-top-0">รหัสการลา</th>
+                                                <th class="border-top-0">รหัสพนักงาน</th>
+                                                <th class="border-top-0">ชื่อ-นามสกุล</th>
+                                                <th class="border-top-0">รายการ</th>
+                                                <th class="border-top-0">ประเภทการลา</th>
+                                                <th class="border-top-0">วันที่ลา</th>
+                                                <th class="border-top-0">ทำรายการโดย</th>
+                                                <th class="border-top-0">เมื่อวันที่</th>
+                                                <th class="border-top-0">สถานะ</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td style="width:50px;"><span class="round">S</span></td>
-                                                <td class="align-middle">
-                                                    <h6>Sunil Joshi</h6><small class="text-muted">Web Designer</small>
-                                                </td>
-                                                <td class="align-middle">Elite Admin</td>
-                                                <td class="align-middle">$3.9K</td>
-                                            </tr>
-                                            <tr class="active">
-                                                <td><span class="round"><img src="<?php echo base_url();?>assets/images/users/2.jpg"
-                                                            alt="user" width="50"></span></td>
-                                                <td class="align-middle">
-                                                    <h6>Andrew</h6><small class="text-muted">Project Manager</small>
-                                                </td>
-                                                <td class="align-middle">Real Homes</td>
-                                                <td class="align-middle">$23.9K</td>
+                                                <td>1</td>
+                                                <td>Deshmukh</td>
+                                                <td>Prohaska</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
                                             </tr>
                                             <tr>
-                                                <td><span class="round round-success">B</span></td>
-                                                <td class="align-middle">
-                                                    <h6>Bhavesh patel</h6><small class="text-muted">Developer</small>
-                                                </td>
-                                                <td class="align-middle">MedicalPro Theme</td>
-                                                <td class="align-middle">$12.9K</td>
+                                                <td>2</td>
+                                                <td>Deshmukh</td>
+                                                <td>Gaylord</td>
+                                                <td>@Ritesh</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
                                             </tr>
                                             <tr>
-                                                <td><span class="round round-primary">N</span></td>
-                                                <td class="align-middle">
-                                                    <h6>Nirav Joshi</h6><small class="text-muted">Frontend Eng</small>
-                                                </td>
-                                                <td class="align-middle">Elite Admin</td>
-                                                <td class="align-middle">$10.9K</td>
+                                                <td>3</td>
+                                                <td>Sanghani</td>
+                                                <td>Gusikowski</td>
+                                                <td>@Govinda</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
                                             </tr>
                                             <tr>
-                                                <td><span class="round round-warning">M</span></td>
-                                                <td class="align-middle">
-                                                    <h6>Micheal Doe</h6><small class="text-muted">Content Writer</small>
-                                                </td>
-                                                <td class="align-middle">Helping Hands</td>
-                                                <td class="align-middle">$12.9K</td>
+                                                <td>4</td>
+                                                <td>Roshan</td>
+                                                <td>Rogahn</td>
+                                                <td>@Hritik</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
                                             </tr>
                                             <tr>
-                                                <td><span class="round round-danger">N</span></td>
-                                                <td class="align-middle">
-                                                    <h6>Johnathan</h6><small class="text-muted">Graphic</small>
-                                                </td>
-                                                <td class="align-middle">Digital Agency</td>
-                                                <td class="align-middle">$2.6K</td>
+                                                <td>5</td>
+                                                <td>Joshi</td>
+                                                <td>Hickle</td>
+                                                <td>@Maruti</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Nigam</td>
+                                                <td>Eichmann</td>
+                                                <td>@Sonu</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
+                                                <td>@Genelia</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
+
+
+
                     </div>
                 </div>
+
+
                 <!-- ============================================================== -->
-                <!-- Table -->
+                <!-- End PAge Content -->
                 <!-- ============================================================== -->
                 <!-- ============================================================== -->
-                <!-- Recent blogss -->
+                <!-- Right sidebar -->
                 <!-- ============================================================== -->
-                <div class="row justify-content-center">
-                    <!-- Column -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img class="card-img-top img-responsive" src="<?php echo base_url();?>assets/images/big/img1.jpg" alt="Card">
-                            <div class="card-body">
-                                <ul class="list-inline d-flex align-items-center">
-                                    <li class="ps-0">20 May 2021</li>
-                                    <li class="ms-auto"><a href="javascript:void(0)" class="link">3 Comment</a></li>
-                                </ul>
-                                <h3 class="font-normal">Featured Hydroflora Pots Garden &amp; Outdoors</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img class="card-img-top img-responsive" src="<?php echo base_url();?>assets/images/big/img2.jpg" alt="Card">
-                            <div class="card-body">
-                                <ul class="list-inline d-flex align-items-center">
-                                    <li class="ps-0">20 May 2021</li>
-                                    <li class="ms-auto"><a href="javascript:void(0)" class="link">3 Comment</a></li>
-                                </ul>
-                                <h3 class="font-normal">Featured Hydroflora Pots Garden &amp; Outdoors</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img class="card-img-top img-responsive" src="<?php echo base_url();?>assets/images/big/img4.jpg" alt="Card">
-                            <div class="card-body">
-                                <ul class="list-inline d-flex align-items-center">
-                                    <li class="ps-0">20 May 2021</li>
-                                    <li class="ms-auto"><a href="javascript:void(0)" class="link">3 Comment</a></li>
-                                </ul>
-                                <h3 class="font-normal">Featured Hydroflora Pots Garden &amp; Outdoors</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                </div>
+                <!-- .right-sidebar -->
                 <!-- ============================================================== -->
-                <!-- Recent blogss -->
+                <!-- End Right sidebar -->
                 <!-- ============================================================== -->
-            </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
+</div>
+
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
+<script type="text/javascript">
+    
+    $(function(){
+  $('#myTable').dataTable({
+    ordering: true,
+    searching: true,
+    lengthChange: true
+  });
+});
+
+</script>
